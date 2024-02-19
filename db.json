@@ -26,6 +26,116 @@
             "money" : "$12.99",
             "rate" :"4.8",
             "date":"34min"
+        },
+        {
+            "id": "4",
+            "img":"./public/taom1.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"24min"
+        },
+        {
+            "id": "5",
+            "img":"./public/taom2.png",
+            "tittle": "Trending",
+            "name": "Swe Fish",
+            "money" : "$19.99",
+            "rate" :"4.9",
+            "date":"34min"
+        },
+        {
+            "id": "6",
+            "img":"./public/taom3.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"34min"
+        },
+        {
+            "id": "7",
+            "img":"./public/taom1.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"24min"
+        },
+        {
+            "id": "8",
+            "img":"./public/taom2.png",
+            "tittle": "Trending",
+            "name": "Swe Fish",
+            "money" : "$19.99",
+            "rate" :"4.9",
+            "date":"34min"
+        },
+        {
+            "id": "9",
+            "img":"./public/taom3.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"34min"
+        },
+        {
+            "id": "10",
+            "img":"./public/taom1.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"24min"
+        },
+        {
+            "id": "11",
+            "img":"./public/taom2.png",
+            "tittle": "Trending",
+            "name": "Swe Fish",
+            "money" : "$19.99",
+            "rate" :"4.9",
+            "date":"34min"
+        },
+        {
+            "id": "12",
+            "img":"./public/taom3.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"34min"
+        },
+        {
+            "id": "13",
+            "img":"./public/taom1.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"24min"
+        },
+        {
+            "id": "14",
+            "img":"./public/taom2.png",
+            "tittle": "Trending",
+            "name": "Swe Fish",
+            "money" : "$19.99",
+            "rate" :"4.9",
+            "date":"34min"
+        },
+        {
+            "id": "15",
+            "img":"./public/taom3.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"34min"
         }
+        
+  
     ]
 }

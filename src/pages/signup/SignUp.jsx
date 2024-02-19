@@ -8,7 +8,7 @@ import gmail from '../../../public/login_gmail.png'
 import none_wiew from '../../../public/eye_none.png'
 import wiew from '../../../public/eye.png'
 import logo from '../../../public/logog.png'
-const SignUp = () => {
+const SignUp = ({register, setregister}) => {
   return (
     <div className="signup">
         <NavLink to="/"><img src={logo} className='logo' alt="" /></NavLink>
@@ -27,7 +27,9 @@ const SignUp = () => {
         </div>
         <div className="input1">
         <img src={password} alt="" className="profile" />
-          <input type="text" placeholder='PASSWORD' id='text' className='name' />
+          <input type="text" placeholder='PASSWORD' id='text' className='name' 
+          // onChange={(e)=> setregister (e.target.value)}
+           />
           <img src={none_wiew} alt="" className='eye' />
           <img src={wiew} alt="" className='eye'  />
         </div>

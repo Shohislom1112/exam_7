@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import food from "../../../public/Food.png";
 import mobile from "../../../public/Mobile.png";
@@ -15,14 +15,21 @@ import divider from "../../../public/divider.png";
 import divider2 from "../../../public/divider2.png";
 import stars from "../../../public/stars.png";
 import profile from "../../../public/profile.png";
-
+import useTovars from "../../app/getTovars";
 import divider3 from "../../../public/customdivider.png";
 import vergul from "../../../public/vergul.png";
 import Footer from "../../Components/footer/Footer";
 import Header from "../../Components/header/Header";
 const Home = () => {
+  const { loading, tovars, error, getTovars } = useTovars();
+  const [change, setChange] = useState(false);
+  useEffect(() => {
+    getTovars();
+  }, [change]);
   return (
-    <main> <Header/>
+    <main>
+      {" "}
+      <Header />
       <div className="container">
         <section className="head">
           <div className="heads">
@@ -118,7 +125,28 @@ const Home = () => {
         <br />
         <br />
         <section className="tovars">
-          {/* <div className="all_dishes"></div> */}
+          <div className="all_dishes">
+            <div className="dishs">
+              {loading ? <h1>Loading...</h1> : null}
+              {error ? <h1>{error}</h1> : null}
+              {tovars.length < 5 ? null :(
+                <ul className="ul">
+                  {tovars.map((tovars) => (
+                    <li className="li" key={tovars.id}>
+                      <img src={tovars.img} className="img" alt="" />
+                      <p className="p1">{tovars.tittle}</p>
+                      <p className="p2">{tovars.name}</p>
+                      <div className="tt">
+                        <p className="p3">{tovars.date}</p>
+                        <p className="p3">{tovars.rate}</p>
+                      </div>
+                      <p className="p1">{tovars.money}</p>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </div>
           <hr />
           <div className="purchaser">
             <div className="cards">
@@ -267,34 +295,39 @@ const Home = () => {
                   <div className="txt">
                     <p className="txt">
                       “ Online invoice payment helps companies save time, are
-                      faster and save  ”
+                      faster and save ”
                     </p>
                   </div>
                   <div className="star">
                     <img src={stars} alt="" className="stars" />
-            </div>
                   </div>
                 </div>
               </div>
-                <img src={divider3} alt="" className="imgg" />
+            </div>
+            <img src={divider3} alt="" className="imgg" />
           </div>
           <div className="chegirma">
             <div className="cards">
-                <div className="card1">
-                    <p className="txt">GET 50%</p>
-                   <div className="input">
-                   <input type="search" placeholder=" Enter Your Email Address"  id="search" className="search"/>
-                   <button className="nut">SUBSCRIBE</button>
-                   </div>
-                </div>  
-                <div className="card2">
-                    <img src={taom2} alt="" className="image" />
+              <div className="card1">
+                <p className="txt">GET 50%</p>
+                <div className="input">
+                  <input
+                    type="search"
+                    placeholder=" Enter Your Email Address"
+                    id="search"
+                    className="search"
+                  />
+                  <button className="nut">SUBSCRIBE</button>
                 </div>
+              </div>
+              <div className="card2">
+                <img src={taom2} alt="" className="image" />
+              </div>
             </div>
           </div>
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </main>
   );
 };

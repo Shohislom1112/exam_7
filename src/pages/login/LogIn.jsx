@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useNavigate} from 'react'
 import './LogIn.scss'
 import {NavLink} from 'react-router-dom'
 import password from '../../../public/password.png'
@@ -8,10 +8,19 @@ import gmail from '../../../public/login_gmail.png'
 import none_wiew from '../../../public/eye_none.png'
 import wiew from '../../../public/eye.png'
 import logo from '../../../public/logog.png'
+import { i } from 'vite/dist/node/types.d-jgA8ss1A'
 
-// import Footer from '../../Components/footer/Footer'
-// import Header from '../../Components/header/Header'
-const LogIn = () => {
+import Footer from '../../Components/footer/Footer'
+import Header from '../../Components/header/Header'
+const LogIn = ({register, registerr, setregisterr}) => {
+//   const navigate = useNavigate()
+//   useEffect(()=>{ 
+    
+//   }, [])
+//   const handl=()=> {
+// {register.value == registerr.value? navigate('/'):null}
+
+//   }
   return (
     <div className='login'>
       {/* <Header/> */}
@@ -22,21 +31,20 @@ const LogIn = () => {
         <p className="p1">
         Sign Up To eatly
         </p>
-        {/* <div className="input1">
-            <img src={profile} alt="" className="profile" />
-          <input type="text" placeholder='FULL NAME' id='text' className='name' />
-        </div> */}
+
         <div className="input1">
         <img src={gmail} alt="" className="profile" />
           <input type="text" placeholder='EMAIL' id='text' className='name' />
         </div>
         <div className="input1">
         <img src={password} alt="" className="profile" />
-          <input type="text" placeholder='PASSWORD' id='text' className='name' />
+          <input type="text" placeholder='PASSWORD' id='text' className='name' 
+          // onChange={(e)=> setregisterr(e.target.value)} 
+          />
           <img src={none_wiew} alt="" className='eye' />
           <img src={wiew} alt="" className='eye'  />
         </div>
-        <button className="button">
+        <button className="button" onClick={handl}>
         SIGN UP
         </button>
         <div className="p">
@@ -53,6 +61,7 @@ const LogIn = () => {
       {/* <Footer/> */}
     </div>
   )
-}
+}  
+
 
 export default LogIn

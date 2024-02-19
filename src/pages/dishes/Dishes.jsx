@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Dishes.scss";
 import plus from '../../../public/plus.png'
 import minus from '../../../public/minus.png'
@@ -10,31 +10,42 @@ import useTovars from "../../app/getTovars";
 const Dishes = () => {
   const { loading, tovars, error, getTovars } =
   useTovars();
-  // const [title, setTitle] = useState('');
   const [change, setChange] = useState(false);
 
   useEffect(() => {
-    getTodos();
+    getTovars();
   }, [change]);
   return (
     <div className="dishes">
       <Header/>
       <div className="container">
         <div className="alldishes">
-        {loading ? <h1>Loading...</h1> : null}
+          
+          <div className="dish">
+             {loading ? <h1>Loading...</h1> : null}
         {error ? <h1>{error}</h1> : null}
-        {tovars.length > 0 ? (
-          <ul>
+        { (
+          <ul className="ul"> 
 
             {tovars.map((tovars) => (
-              <li key={tovars.id}>
-                <img src={tovars.img}alt="" />
+              <li className="li" key={tovars.id}>
+                <img src={tovars.img} className="img" alt="" />
+                <p className="p1">{tovars.tittle}</p>
+                <p className="p2">{tovars.name}</p>
+              <div className="tt">
+              <p className="p3">{tovars.date}</p>
+              <p className="p3">{tovars.rate}</p>
+              
+              </div>
+                <p className="p1">{tovars.money}</p>
+
 
               </li>
             ))}
             </ul>
           
-        ) : null}
+        ) }
+          </div>
           </div> <hr />
         <div className="question">
           <div className="words">

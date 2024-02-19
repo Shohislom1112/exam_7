@@ -3,7 +3,7 @@ import { create } from 'zustand';
 
 const useTovars = create((set) => ({
   loading: false,
-  todos: [],
+  tovars: [],
   error: null,
 
   getTovars: async () => {

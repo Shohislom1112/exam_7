@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Dishes from "./pages/dishes/Dishes";
@@ -10,7 +10,8 @@ import "./App.css";
 import Footer from "./Components/footer/Footer";
 import Shop from "./pages/Shop/Shop";
 // import Container from 'react-bootstrap/Container';
-
+  const [register,setregister]=useState("")
+  const [registerr,setregisterr]=useState("")
 const App = () => {
   return (
     <div className="app">
@@ -18,11 +19,11 @@ const App = () => {
         <Router>
           {/* <Header /> */}
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/dishes" element={<Dishes />} />
             <Route path="/dishdetails" element={<DishDetails />} />
-            <Route path="/login" element={<LogIn />} />
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/login" element={<LogIn register={register} registerr={registerr} setregisterr={setregisterr}/>} />
+            <Route path="/" element={<SignUp register={register} setregister={setregister} />} />
             <Route path="/shop" element={<Shop />} />
           </Routes>
           {/* <Footer/> */}
