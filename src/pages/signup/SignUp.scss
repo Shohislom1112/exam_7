@@ -1,0 +1,189 @@
+.login {
+    // background: #d1d1d1;a
+    .signup {
+        .logo {
+          width: 37.69px;
+          margin-left: 25px;
+          
+          height: 34.71px;
+          top: 22.76px;
+          left: 34.13px;
+          border-radius: 5.72px;
+          align-items: start;
+          text-align: start;
+        }
+        .cards {
+          // margin: 100px 10px;
+          display: flex;
+          
+          // gap: 20px;
+          text-align: center;
+          // justify-content: space-around;
+          
+          .card_1 {
+              margin-top: 100px;
+              margin-left: 20px;
+              
+              width: 720px;
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              //   text-align: center;
+              text-align: center;
+              // justify-content: center;
+              gap: 25px;
+              background-color: white;
+        .p1 {
+          // width: 265px;
+          height: 44px;
+          top: 249px;
+          left: 235px;
+          font-size: 15px;
+          font-family: Poppins;
+          font-size: 51px;
+          font-weight: 600;
+          line-height: 58px;
+          letter-spacing: 0px;
+          text-align: left;
+          padding-bottom: 10px;
+        }
+        .p {
+          font-family: Poppins;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.01em;
+          text-align: left;
+          margin-left: 45px;
+          width: 225px;
+          height: 20px;
+          top: 525.93px;
+          left: 164.72px;
+          a {
+            font-family: Poppins;
+            font-weight: 700;
+          }
+        }
+        .input1 {
+          display: flex;
+          text-align: center;
+          border-radius: 14.27px;
+          align-items: center;
+          width: 382.44px;
+          height: 74.49px;
+          top: 329px;
+          left: 196px;
+          background: #f5f5f5;
+          transition: 1s;
+          &:hover {
+            border: 0.5px solid #00ffff;
+            box-shadow: 3px 3px 10px 5px rgba(163, 163, 163, 0.5);
+            .name {
+              padding-left: 40px;
+            }
+            .profile {
+              padding-right: 3px;
+              margin-left: 2px;
+            }
+          }
+          .name {
+            transition: 2s;
+            border-radius: 14.27px;
+            width: 382.44px;
+            height: 74.49px;
+            top: 329px;
+            left: 196px;
+            padding-left: 10px;
+            font-family: Poppins;
+            font-weight: 600;
+            line-height: 58px;
+            background: #f5f5f5;
+            color: #dadada;
+            outline: none;
+            border: none;
+          }
+          .eye {
+            width: 15.42px;
+            height: 13.84px;
+            top: 395.49px;
+            left: 378.17px;
+            color: #c2c3cb;
+          }
+          .profile {
+            transition: 2s;
+            margin-left: 15px;
+            width: 14.63px;
+            height: 16.02px;
+            top: 253.97px;
+            left: 158.39px;
+            //   position: relative;
+            //   margin-left: ;
+          }
+        }
+        .button {
+          font-family: Poppins;
+          color: #fff;
+          border: 1px solid white;
+          font-size: 13px;
+          font-weight: 600;
+          line-height: 19px;
+          letter-spacing: 0.03em;
+          text-align: center;
+          padding: 15px 120px;
+          width: 380px;
+          top: 473.76px;
+          left: 250.89px;
+          border-radius: 8px;
+          background: #6c5fbc;
+          transition: 1s;
+          &:hover {
+            background-color: #fff;
+            color: #6c5fbc;
+            border: 1px solid #6c5fbc;
+          }
+        }
+      }
+      .card_2 {
+        width: 720px;
+        height: 700px;
+        background-color: #6c5fbc;
+        display: flex;
+        flex-direction: column;
+        .imag {
+          margin-left: 100px;
+          margin-top: 150px;
+
+          width: 388.27px;
+          height: 295.41px;
+          top: 177.07px;
+          left: 608px;
+        }
+        .par1 {
+          margin-left: 100px;
+          font-family: Manrope;
+          font-size: 28px;
+          font-weight: 800;
+          color: #fff;
+          line-height: 31px;
+          letter-spacing: 0em;
+          text-align: center;
+          width: 355.56px;
+          height: 31px;
+        }
+        .par2 {
+          color: #fff;
+          margin-left: 100px;
+          font-family: Manrope;
+          font-size: 10px;
+          font-weight: 500;
+          line-height: 15px;
+          letter-spacing: 0.14222221076488495px;
+          text-align: center;
+          width: 355.56px;
+          height: 45px;
+          opacity: 0.7px;
+        }
+      }
+    }
+  }
+}

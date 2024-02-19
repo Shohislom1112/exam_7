@@ -1,0 +1,83 @@
+.shop {
+    margin-top: 200px;
+    margin-bottom: 120px;
+    .tovars {
+        .cards {
+            
+        }
+        .foiz {
+            .cards {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #5c4eae;
+                //   background-size: 1214px 200px;
+          
+                max-width: 1214px;
+                height: 280px;
+                top: 4997px;
+                left: 130px;
+                border-radius: 30px;
+                opacity: 0.8px;
+          
+                .card1 {
+                  .txt {
+                    font-family: Poppins;
+                    font-size: 70px;
+                    font-weight: 800;
+                    line-height: 105px;
+                    letter-spacing: 0em;
+                    color: #fff;
+                    //   text-align: center;
+                    margin-left: 35px;
+                    margin-top: 10px;
+                  }
+                  .input {
+                    margin-top: 25px;
+                    margin-left: 25px;
+                    width: 600.73px;
+                    height: 68px;
+                    background: #ffff;
+                    border-radius: 8px;
+                    .search {
+                      width: 439.73px;
+                      height: 68px;
+                      top: 5148px;
+                      left: 196px;
+                      border-radius: 8px;
+                      border: #fff;
+                      outline: none;
+                      margin-left: 15px;
+                    }
+                    .nut {
+                      color: #6155ae;
+                      background: #fff;
+                      width: 132.37px;
+                      height: 53.44px;
+                      top: 5155.25px;
+                      left: 497.01px;
+                      border-radius: 11.25px;
+                      border: 2px solid #5c4eae;
+                      font-size: medium;
+                      transition: 1s;
+                      &:hover {
+                        background: #6155ae;
+                        border: #fff;
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
+                .card2 {
+                  .image {
+                      margin-top: 235px;
+                    width: 274.06px;
+                    height: 276.01px;
+                    top: 5060.99px;
+                    left: 997.89px;
+                  }
+                }
+              }
+        }
+    }
+}

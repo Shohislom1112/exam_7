@@ -1,0 +1,31 @@
+{
+    "tovars" :[
+        {
+            "id": "1",
+            "img":"./public/taom1.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"24min"
+        },
+        {
+            "id": "2",
+            "img":"./public/taom2.png",
+            "tittle": "Trending",
+            "name": "Swe Fish",
+            "money" : "$19.99",
+            "rate" :"4.9",
+            "date":"34min"
+        },
+        {
+            "id": "3",
+            "img":"./public/taom3.png",
+            "tittle": "Healthy",
+            "name": "Chicken Hell",
+            "money" : "$12.99",
+            "rate" :"4.8",
+            "date":"34min"
+        }
+    ]
+}
